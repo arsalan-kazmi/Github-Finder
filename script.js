@@ -19,11 +19,12 @@ async function getprofile(userName) {
   console.log(data);
 
   if (data.message == "Not Found") {
-    hide.classList.add("hidden");
     notFound.innerText = `${userName} not found`;
     setInterval(function () {
       notFound.innerText = "";
     }, 3000);
+    hide.classList.add("hidden");
+    profile.src = "";
     return;
   }
 

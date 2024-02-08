@@ -33,12 +33,6 @@ body {
   display: none;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #heading {
   font-size: 2rem;
   margin-top: .5rem;
@@ -92,6 +86,8 @@ button:hover {
 }
 
 p {
+  display: flex;
+  justify-content: center;
   color: #006989;
   font-size: 1.3rem;
   font-weight: bold;
