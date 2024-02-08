@@ -108,7 +108,8 @@ a {
   }
 
   .container {
-    max-width: 350px;
+    width: 90svw;
+    max-height: 90svh;
   }
 
   input[type="text"] {
