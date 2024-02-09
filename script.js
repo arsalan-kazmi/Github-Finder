@@ -31,7 +31,12 @@ async function getprofile(userName) {
   hide.classList.remove("hidden");
 
   profile.src = data.avatar_url;
+  // here  i am adding this line because it is showing  null on some users insted of there names . so do a quick review on it 
+  
+  if(data.name!=="null"){ // from
+    
   name.innerText = `Name: ${data.name}`;
+  }   //to
   bio.innerText = data.bio;
   repos.innerText = `Repositories: ${data.public_repos}`;
   following.innerText = `Following: ${data.following}`;
