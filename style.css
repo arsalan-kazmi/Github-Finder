@@ -99,10 +99,6 @@ a {
 }
 
 @media only screen and (max-width: 450px) {
-  body {
-    overflow: hidden;
-  }
-
   .container {
     min-width: 80svw;
     max-width: 90svw;
