@@ -104,7 +104,8 @@ a {
   }
 
   .container {
-    width: 90svw;
+    min-width: 80svw;
+    max-width: 90svw;
     max-height: 90svh;
   }
 

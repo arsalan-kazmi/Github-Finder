@@ -2,7 +2,7 @@
 let userName = document.querySelector("#user-name");
 let profile = document.querySelector("#profile-pic");
 
-let name = document.querySelector(".name");
+let gitName = document.querySelector(".name");
 let bio = document.querySelector(".bio");
 let repos = document.querySelector(".repos");
 let notFound = document.querySelector(".not-found");
@@ -31,7 +31,13 @@ async function getprofile(userName) {
   hide.classList.remove("hidden");
 
   profile.src = data.avatar_url;
-  name.innerText = `Name: ${data.name}`;
+
+  let noName = data.name;
+  if (noName !== null) {
+    gitName.innerText = `Name: ${data.name}`;
+  } else {
+    gitName.innerText = `Username: ${userName}`;
+  }
   bio.innerText = data.bio;
   repos.innerText = `Repositories: ${data.public_repos}`;
   following.innerText = `Following: ${data.following}`;
