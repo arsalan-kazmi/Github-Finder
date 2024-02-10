@@ -16,7 +16,7 @@ let hide = document.querySelector(".hidden");
 async function getprofile(userName) {
   let response = await fetch(`https://api.github.com/users/${userName}`);
   let data = await response.json();
-  console.log(data);
+  //console.log(data);
 
   if (data.message == "Not Found") {
     notFound.innerText = `${userName} not found`;
