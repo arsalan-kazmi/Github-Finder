@@ -14,8 +14,8 @@
 
 ### :dart: Features
 
-- Finds a Github Profile using their username on GitHub.
-- Uses Api to find Github Profiles
+- Finds a Github Profile using their `username` on GitHub.
+- Uses `Api` to find Github Profiles
 
 ## :point_right:API Reference
 
